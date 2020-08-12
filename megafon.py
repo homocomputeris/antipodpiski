@@ -42,6 +42,6 @@ urls = list(set(urls1+urls2))
 urls.sort()
 print ('URLs in hosts:', len(urls))
 
-with open('hosts.txt', 'w') as hosts:
+with open('hosts', 'w') as hosts:
     for url in urls:
         hosts.write("0.0.0.0 " + url + '\n')
